@@ -19,6 +19,9 @@
 		EC5CEDF9198529E100135033 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5CEDE1198529E100135033 /* UIKit.framework */; };
 		EC5CEE01198529E100135033 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC5CEDFF198529E100135033 /* InfoPlist.strings */; };
 		EC5CEE03198529E100135033 /* BlogReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5CEE02198529E100135033 /* BlogReaderTests.m */; };
+		EC5CEE0D19852AEA00135033 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC5CEE0C19852AEA00135033 /* MainStoryboard.storyboard */; };
+		EC5CEE101985C64D00135033 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5CEE0F1985C64D00135033 /* TableViewController.m */; };
+		EC5CEE1319868D3A00135033 /* BlogPost.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5CEE1219868D3A00135033 /* BlogPost.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,11 @@
 		EC5CEDFE198529E100135033 /* BlogReaderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BlogReaderTests-Info.plist"; sourceTree = "<group>"; };
 		EC5CEE00198529E100135033 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EC5CEE02198529E100135033 /* BlogReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlogReaderTests.m; sourceTree = "<group>"; };
+		EC5CEE0C19852AEA00135033 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		EC5CEE0E1985C64D00135033 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		EC5CEE0F1985C64D00135033 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		EC5CEE1119868D3A00135033 /* BlogPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogPost.h; sourceTree = "<group>"; };
+		EC5CEE1219868D3A00135033 /* BlogPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogPost.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,9 +116,14 @@
 			isa = PBXGroup;
 			children = (
 				EC5CEDEC198529E100135033 /* AppDelegate.h */,
+				EC5CEE0E1985C64D00135033 /* TableViewController.h */,
+				EC5CEE0F1985C64D00135033 /* TableViewController.m */,
+				EC5CEE1119868D3A00135033 /* BlogPost.h */,
+				EC5CEE1219868D3A00135033 /* BlogPost.m */,
 				EC5CEDED198529E100135033 /* AppDelegate.m */,
 				EC5CEDEF198529E100135033 /* Images.xcassets */,
 				EC5CEDE4198529E100135033 /* Supporting Files */,
+				EC5CEE0C19852AEA00135033 /* MainStoryboard.storyboard */,
 			);
 			path = BlogReader;
 			sourceTree = "<group>";
@@ -219,6 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC5CEE0D19852AEA00135033 /* MainStoryboard.storyboard in Resources */,
 				EC5CEDE8198529E100135033 /* InfoPlist.strings in Resources */,
 				EC5CEDF0198529E100135033 /* Images.xcassets in Resources */,
 			);
@@ -240,7 +254,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC5CEDEE198529E100135033 /* AppDelegate.m in Sources */,
+				EC5CEE101985C64D00135033 /* TableViewController.m in Sources */,
 				EC5CEDEA198529E100135033 /* main.m in Sources */,
+				EC5CEE1319868D3A00135033 /* BlogPost.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +377,7 @@
 				GCC_PREFIX_HEADER = "BlogReader/BlogReader-Prefix.pch";
 				INFOPLIST_FILE = "BlogReader/BlogReader-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -374,6 +391,7 @@
 				GCC_PREFIX_HEADER = "BlogReader/BlogReader-Prefix.pch";
 				INFOPLIST_FILE = "BlogReader/BlogReader-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
