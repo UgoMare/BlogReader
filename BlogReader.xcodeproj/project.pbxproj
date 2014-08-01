@@ -22,6 +22,8 @@
 		EC5CEE0D19852AEA00135033 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC5CEE0C19852AEA00135033 /* MainStoryboard.storyboard */; };
 		EC5CEE101985C64D00135033 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5CEE0F1985C64D00135033 /* TableViewController.m */; };
 		EC5CEE1319868D3A00135033 /* BlogPost.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5CEE1219868D3A00135033 /* BlogPost.m */; };
+		EC8F5706198AE28800A215EA /* no-image.png in Resources */ = {isa = PBXBuildFile; fileRef = EC8F5705198AE28800A215EA /* no-image.png */; };
+		EC8F574D198B09AE00A215EA /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC8F574C198B09AE00A215EA /* WebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,9 @@
 		EC5CEE0F1985C64D00135033 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		EC5CEE1119868D3A00135033 /* BlogPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogPost.h; sourceTree = "<group>"; };
 		EC5CEE1219868D3A00135033 /* BlogPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogPost.m; sourceTree = "<group>"; };
+		EC8F5705198AE28800A215EA /* no-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "no-image.png"; sourceTree = "<group>"; };
+		EC8F574B198B09AE00A215EA /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebViewController.h; path = ../WebViewController.h; sourceTree = "<group>"; };
+		EC8F574C198B09AE00A215EA /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebViewController.m; path = ../WebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +120,8 @@
 		EC5CEDE3198529E100135033 /* BlogReader */ = {
 			isa = PBXGroup;
 			children = (
+				EC8F574B198B09AE00A215EA /* WebViewController.h */,
+				EC8F574C198B09AE00A215EA /* WebViewController.m */,
 				EC5CEDEC198529E100135033 /* AppDelegate.h */,
 				EC5CEE0E1985C64D00135033 /* TableViewController.h */,
 				EC5CEE0F1985C64D00135033 /* TableViewController.m */,
@@ -133,6 +140,7 @@
 			children = (
 				EC5CEDE5198529E100135033 /* BlogReader-Info.plist */,
 				EC5CEDE6198529E100135033 /* InfoPlist.strings */,
+				EC8F5705198AE28800A215EA /* no-image.png */,
 				EC5CEDE9198529E100135033 /* main.m */,
 				EC5CEDEB198529E100135033 /* BlogReader-Prefix.pch */,
 			);
@@ -232,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC8F5706198AE28800A215EA /* no-image.png in Resources */,
 				EC5CEE0D19852AEA00135033 /* MainStoryboard.storyboard in Resources */,
 				EC5CEDE8198529E100135033 /* InfoPlist.strings in Resources */,
 				EC5CEDF0198529E100135033 /* Images.xcassets in Resources */,
@@ -254,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC5CEDEE198529E100135033 /* AppDelegate.m in Sources */,
+				EC8F574D198B09AE00A215EA /* WebViewController.m in Sources */,
 				EC5CEE101985C64D00135033 /* TableViewController.m in Sources */,
 				EC5CEDEA198529E100135033 /* main.m in Sources */,
 				EC5CEE1319868D3A00135033 /* BlogPost.m in Sources */,
@@ -455,6 +465,7 @@
 				EC5CEE08198529E100135033 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EC5CEE09198529E100135033 /* Build configuration list for PBXNativeTarget "BlogReaderTests" */ = {
 			isa = XCConfigurationList;
@@ -463,6 +474,7 @@
 				EC5CEE0B198529E100135033 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
