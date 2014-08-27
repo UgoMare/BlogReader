@@ -91,7 +91,7 @@
     
     NSLog(@"Load Posts %i", self.page);
     
-    NSString *url = [NSString stringWithFormat:@"http://localhost/blog_reader_ios/get_data.php?posts=%i", self.page];
+    NSString *url = [NSString stringWithFormat:@"http://ugomare.com/blog_reader_ios/get_data.php?posts=%i", self.page];
 
     NSURL *blogURL = [NSURL URLWithString:url];
     NSData *jsonData = [NSData dataWithContentsOfURL: blogURL];
