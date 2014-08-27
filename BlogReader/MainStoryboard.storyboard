@@ -46,7 +46,13 @@
                             <outlet property="delegate" destination="HD2-vt-WpU" id="yre-R7-Ck5"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="BlogReader" id="Uo3-FP-3iR"/>
+                    <navigationItem key="navigationItem" title="BlogReader" id="Uo3-FP-3iR">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="sHR-f6-vKU">
+                            <connections>
+                                <action selector="refresh:" destination="HD2-vt-WpU" id="FhQ-AA-GVU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <size key="freeformSize" width="320" height="568"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qU4-3k-37L" userLabel="First Responder" sceneMemberID="firstResponder"/>
